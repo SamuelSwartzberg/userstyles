@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name        jisho
+@namespace   https://samswartzberg.com
+@version     0.0.1
+@description No description yet.
+@author      https://samswartzberg.com
+@updateURL   https://raw.githubusercontent.com/SamuelSwartzberg/userstyles/master/jisho/dist/jisho.user.js
+==/UserStyle== */
+body > header.row {
+  display: none;
+}
+
+.row {
+  max-width: 85em;
+}
+
+html {
+  font-size: 0.8em;
+}
