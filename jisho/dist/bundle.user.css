@@ -6,14 +6,16 @@
 @author      https://samswartzberg.com
 @updateURL   https://raw.githack.com/SamuelSwartzberg/userstyles/master/jisho/dist/bundle.user.css
 ==/UserStyle== */
-body > header.row {
-  display: none;
-}
+@-moz-document domain("jisho.org") {
+  body > header.row {
+    display: none;
+  }
 
-.row {
-  max-width: 85em;
-}
+  .row {
+    max-width: 85em;
+  }
 
-html {
-  font-size: 0.8em;
+  html {
+    font-size: 0.8em;
+  }
 }

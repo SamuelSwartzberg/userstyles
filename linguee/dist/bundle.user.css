@@ -6,15 +6,17 @@
 @author      https://samswartzberg.com
 @updateURL   https://raw.githack.com/SamuelSwartzberg/userstyles/master/linguee/dist/bundle.user.css
 ==/UserStyle== */
-.l_deepl_ad__content_container {
-  display: none;
-}
+@-moz-document domain("linguee.com") {
+  .l_deepl_ad__content_container {
+    display: none;
+  }
 
-#mainlayout {
-  padding: 0 1em !important;
-}
+  #mainlayout {
+    padding: 0 1em !important;
+  }
 
-#outer_div {
-  min-width: unset !important;
-  max-width: 60em !important;
+  #outer_div {
+    min-width: unset !important;
+    max-width: 60em !important;
+  }
 }
