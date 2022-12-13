@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name        globals
+@namespace   https://samswartzberg.com
+@version     0.0.1
+@description No description yet.
+@author      https://samswartzberg.com
+@updateURL   https://raw.githubusercontent.com/SamuelSwartzberg/userstyles/master/globals/dist/globals.user.js
+==/UserStyle== */
+@font-face {
+  font-family: "NotoSansJP";
+  font-style: normal;
+  src: local("Noto Sans JP Thin");
+  unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  font-style: normal;
+  src: local("Noto Sans JP Light");
+  unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  font-style: normal;
+  src: local("Noto Sans JP Regular");
+  unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  font-style: normal;
+  src: local("Noto Sans JP Medium");
+  unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  font-style: normal;
+  src: local("Noto Sans JP Bold");
+  unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSansJP";
+  font-style: normal;
+  src: local("Noto Sans JP Black");
+  unicode-range: U+3000-30ff, U+ff00-ffef, U+4e00-9faf;
+  font-weight: 900;
+}

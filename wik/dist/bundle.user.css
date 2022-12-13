@@ -1,0 +1,565 @@
+/* ==UserStyle==
+@name        wik
+@namespace   https://samswartzberg.com
+@version     0.0.1
+@description No description yet.
+@author      https://samswartzberg.com
+@updateURL   https://raw.githubusercontent.com/SamuelSwartzberg/userstyles/master/wik/dist/wik.user.js
+==/UserStyle== */
+@charset "UTF-8";
+[data-qb-2-tld="wiktionary.org"],
+[data-qb-2-tld="wikipedia.org"],
+[data-qb-2-tld="glottopedia.org"] {
+  /*read, talk etc*/
+}
+[data-qb-2-tld="wiktionary.org"] html,
+[data-qb-2-tld="wikipedia.org"] html,
+[data-qb-2-tld="glottopedia.org"] html {
+  font-size: 0.8rem;
+}
+[data-qb-2-tld="wiktionary.org"] #mw-panel,
+[data-qb-2-tld="wikipedia.org"] #mw-panel,
+[data-qb-2-tld="glottopedia.org"] #mw-panel {
+  width: 2em;
+  opacity: 0;
+  overflow: hidden;
+}
+[data-qb-2-tld="wiktionary.org"] #mw-panel a,
+[data-qb-2-tld="wikipedia.org"] #mw-panel a,
+[data-qb-2-tld="glottopedia.org"] #mw-panel a {
+  color: transparent;
+}
+[data-qb-2-tld="wiktionary.org"] #mw-panel:hover,
+[data-qb-2-tld="wikipedia.org"] #mw-panel:hover,
+[data-qb-2-tld="glottopedia.org"] #mw-panel:hover {
+  width: 10em;
+  background-color: #f6f6f6;
+  border: 0.1em solid #ddd;
+  opacity: inherit;
+}
+[data-qb-2-tld="wiktionary.org"] #mw-panel:hover a,
+[data-qb-2-tld="wikipedia.org"] #mw-panel:hover a,
+[data-qb-2-tld="glottopedia.org"] #mw-panel:hover a {
+  color: #0645ad;
+}
+[data-qb-2-tld="wiktionary.org"] #p-logo,
+[data-qb-2-tld="wikipedia.org"] #p-logo,
+[data-qb-2-tld="glottopedia.org"] #p-logo {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] #p-views,
+[data-qb-2-tld="wikipedia.org"] #p-views,
+[data-qb-2-tld="glottopedia.org"] #p-views {
+  display: block;
+}
+[data-qb-2-tld="wiktionary.org"] #toc,
+[data-qb-2-tld="wikipedia.org"] #toc,
+[data-qb-2-tld="glottopedia.org"] #toc {
+  font-size: 1rem;
+  display: block;
+  position: fixed;
+  top: 3.5em;
+  left: 1em;
+  float: right;
+  width: 12em;
+  clear: both;
+  max-height: 89vh !important;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding: 0.66em;
+}
+[data-qb-2-tld="wiktionary.org"] #toc li,
+[data-qb-2-tld="wikipedia.org"] #toc li,
+[data-qb-2-tld="glottopedia.org"] #toc li {
+  font-size: 0.95em;
+}
+[data-qb-2-tld="wiktionary.org"] #toc a,
+[data-qb-2-tld="wikipedia.org"] #toc a,
+[data-qb-2-tld="glottopedia.org"] #toc a {
+  color: #000d;
+}
+[data-qb-2-tld="wiktionary.org"] #toc a:target,
+[data-qb-2-tld="wikipedia.org"] #toc a:target,
+[data-qb-2-tld="glottopedia.org"] #toc a:target {
+  background-color: grey;
+}
+[data-qb-2-tld="wiktionary.org"] .toc .toctitle,
+[data-qb-2-tld="wikipedia.org"] .toc .toctitle,
+[data-qb-2-tld="glottopedia.org"] .toc .toctitle {
+  text-align: left;
+}
+[data-qb-2-tld="wiktionary.org"] .mw-content-ltr .toc ul ul,
+[data-qb-2-tld="wiktionary.org"] .mw-content-rtl .mw-content-ltr .toc ul ul,
+[data-qb-2-tld="wikipedia.org"] .mw-content-ltr .toc ul ul,
+[data-qb-2-tld="wikipedia.org"] .mw-content-rtl .mw-content-ltr .toc ul ul,
+[data-qb-2-tld="glottopedia.org"] .mw-content-ltr .toc ul ul,
+[data-qb-2-tld="glottopedia.org"] .mw-content-rtl .mw-content-ltr .toc ul ul {
+  margin: 0 0 0 0.8em;
+}
+[data-qb-2-tld="wiktionary.org"] [href*="#cite_note"],
+[data-qb-2-tld="wikipedia.org"] [href*="#cite_note"],
+[data-qb-2-tld="glottopedia.org"] [href*="#cite_note"] {
+  color: #0003;
+}
+[data-qb-2-tld="wiktionary.org"] #mw-head,
+[data-qb-2-tld="wikipedia.org"] #mw-head,
+[data-qb-2-tld="glottopedia.org"] #mw-head {
+  position: static;
+}
+[data-qb-2-tld="wiktionary.org"] .mw-body,
+[data-qb-2-tld="wikipedia.org"] .mw-body,
+[data-qb-2-tld="glottopedia.org"] .mw-body {
+  margin-top: 0;
+}
+[data-qb-2-tld="wiktionary.org"] #p-search,
+[data-qb-2-tld="wikipedia.org"] #p-search,
+[data-qb-2-tld="glottopedia.org"] #p-search {
+  float: left;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  width: 12em;
+  background-color: white;
+  margin: 0;
+}
+[data-qb-2-tld="wiktionary.org"] #p-search,
+[data-qb-2-tld="wiktionary.org"] #p-search *,
+[data-qb-2-tld="wiktionary.org"] #bodyContent,
+[data-qb-2-tld="wikipedia.org"] #p-search,
+[data-qb-2-tld="wikipedia.org"] #p-search *,
+[data-qb-2-tld="wikipedia.org"] #bodyContent,
+[data-qb-2-tld="glottopedia.org"] #p-search,
+[data-qb-2-tld="glottopedia.org"] #p-search *,
+[data-qb-2-tld="glottopedia.org"] #bodyContent {
+  font-size: 1rem !important;
+}
+[data-qb-2-tld="wiktionary.org"] .vertical-navbox tr:not(:first-child),
+[data-qb-2-tld="wikipedia.org"] .vertical-navbox tr:not(:first-child),
+[data-qb-2-tld="glottopedia.org"] .vertical-navbox tr:not(:first-child) {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .vertical-navbox:hover tr:not(:first-child),
+[data-qb-2-tld="wikipedia.org"] .vertical-navbox:hover tr:not(:first-child),
+[data-qb-2-tld="glottopedia.org"] .vertical-navbox:hover tr:not(:first-child) {
+  display: inherit;
+}
+[data-qb-2-tld="wiktionary.org"] .ambox,
+[data-qb-2-tld="wikipedia.org"] .ambox,
+[data-qb-2-tld="glottopedia.org"] .ambox {
+  border: 1px solid #a2a9b1 !important;
+  height: auto;
+  margin: 0 !important;
+  display: inline-table;
+  line-height: 1.2;
+}
+[data-qb-2-tld="wiktionary.org"] .ambox .mbox-image,
+[data-qb-2-tld="wikipedia.org"] .ambox .mbox-image,
+[data-qb-2-tld="glottopedia.org"] .ambox .mbox-image {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .ambox .mbox-text-span > :not(b),
+[data-qb-2-tld="wikipedia.org"] .ambox .mbox-text-span > :not(b),
+[data-qb-2-tld="glottopedia.org"] .ambox .mbox-text-span > :not(b) {
+  font-size: 0;
+}
+[data-qb-2-tld="wiktionary.org"] .ambox-multiple_issues .mw-collapsible,
+[data-qb-2-tld="wiktionary.org"] .ambox-multiple_issues .mw-collapsible-content *,
+[data-qb-2-tld="wikipedia.org"] .ambox-multiple_issues .mw-collapsible,
+[data-qb-2-tld="wikipedia.org"] .ambox-multiple_issues .mw-collapsible-content *,
+[data-qb-2-tld="glottopedia.org"] .ambox-multiple_issues .mw-collapsible,
+[data-qb-2-tld="glottopedia.org"] .ambox-multiple_issues .mw-collapsible-content * {
+  font-size: 1em !important;
+}
+[data-qb-2-tld="wiktionary.org"] .hide-when-compact,
+[data-qb-2-tld="wikipedia.org"] .hide-when-compact,
+[data-qb-2-tld="glottopedia.org"] .hide-when-compact {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] #searchform,
+[data-qb-2-tld="wikipedia.org"] #searchform,
+[data-qb-2-tld="glottopedia.org"] #searchform {
+  margin: 0 !important;
+}
+[data-qb-2-tld="wiktionary.org"] #p-search #searchInput,
+[data-qb-2-tld="wikipedia.org"] #p-search #searchInput,
+[data-qb-2-tld="glottopedia.org"] #p-search #searchInput {
+  width: 100%;
+}
+[data-qb-2-tld="wiktionary.org"] #simpleSearch,
+[data-qb-2-tld="wikipedia.org"] #simpleSearch,
+[data-qb-2-tld="glottopedia.org"] #simpleSearch {
+  min-width: unset;
+  width: unset;
+  max-width: unset;
+}
+[data-qb-2-tld="wiktionary.org"] #mw-page-base,
+[data-qb-2-tld="wikipedia.org"] #mw-page-base,
+[data-qb-2-tld="glottopedia.org"] #mw-page-base {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .vector-menu-content-list li,
+[data-qb-2-tld="wiktionary.org"] .vector-menu-content-list li a,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-content-list li,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-content-list li a,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-content-list li,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-content-list li a {
+  background: unset;
+  border: unset;
+}
+[data-qb-2-tld="wiktionary.org"] #content,
+[data-qb-2-tld="wikipedia.org"] #content,
+[data-qb-2-tld="glottopedia.org"] #content {
+  max-width: 60em;
+  margin-left: 14em;
+  padding-top: 2em;
+  border: none;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+[data-qb-2-tld="wiktionary.org"] .hide-default > :not(h2),
+[data-qb-2-tld="wikipedia.org"] .hide-default > :not(h2),
+[data-qb-2-tld="glottopedia.org"] .hide-default > :not(h2) {
+  display: none !important;
+}
+[data-qb-2-tld="wiktionary.org"] .hide-default:hover > :not(h2),
+[data-qb-2-tld="wikipedia.org"] .hide-default:hover > :not(h2),
+[data-qb-2-tld="glottopedia.org"] .hide-default:hover > :not(h2) {
+  display: block !important;
+}
+[data-qb-2-tld="wiktionary.org"] #right-navigation,
+[data-qb-2-tld="wiktionary.org"] #left-navigation,
+[data-qb-2-tld="wikipedia.org"] #right-navigation,
+[data-qb-2-tld="wikipedia.org"] #left-navigation,
+[data-qb-2-tld="glottopedia.org"] #right-navigation,
+[data-qb-2-tld="glottopedia.org"] #left-navigation {
+  margin: 0;
+  float: none;
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 12em !important;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+[data-qb-2-tld="wiktionary.org"] #left-navigation,
+[data-qb-2-tld="wikipedia.org"] #left-navigation,
+[data-qb-2-tld="glottopedia.org"] #left-navigation {
+  bottom: 3.5em;
+}
+[data-qb-2-tld="wiktionary.org"] #p-personal,
+[data-qb-2-tld="wikipedia.org"] #p-personal,
+[data-qb-2-tld="glottopedia.org"] #p-personal {
+  position: static;
+  font-size: 1em;
+  background-color: white;
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] #p-cactions-label,
+[data-qb-2-tld="wiktionary.org"] .mw-editsection,
+[data-qb-2-tld="wiktionary.org"] #footer,
+[data-qb-2-tld="wikipedia.org"] #p-cactions-label,
+[data-qb-2-tld="wikipedia.org"] .mw-editsection,
+[data-qb-2-tld="wikipedia.org"] #footer,
+[data-qb-2-tld="glottopedia.org"] #p-cactions-label,
+[data-qb-2-tld="glottopedia.org"] .mw-editsection,
+[data-qb-2-tld="glottopedia.org"] #footer {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .vector-menu-dropdown .vector-menu-content-list,
+[data-qb-2-tld="wiktionary.org"] .vector-menu-content-list *,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-dropdown .vector-menu-content-list,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-content-list *,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-dropdown .vector-menu-content-list,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-content-list * {
+  position: static;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+}
+[data-qb-2-tld="wiktionary.org"] .vector-menu-tabs,
+[data-qb-2-tld="wiktionary.org"] .vector-menu-tabs a,
+[data-qb-2-tld="wiktionary.org"] #mw-head .vector-menu-dropdown h3,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-tabs,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-tabs a,
+[data-qb-2-tld="wikipedia.org"] #mw-head .vector-menu-dropdown h3,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-tabs,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-tabs a,
+[data-qb-2-tld="glottopedia.org"] #mw-head .vector-menu-dropdown h3 {
+  background-image: none;
+  height: 2em;
+}
+[data-qb-2-tld="wiktionary.org"] .vector-menu-tabs li,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-tabs li,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-tabs li {
+  line-height: 1;
+}
+[data-qb-2-tld="wiktionary.org"] .vector-menu-tabs li a,
+[data-qb-2-tld="wikipedia.org"] .vector-menu-tabs li a,
+[data-qb-2-tld="glottopedia.org"] .vector-menu-tabs li a {
+  height: auto;
+  padding: 0.75em;
+}
+[data-qb-2-tld="wiktionary.org"] #p-cactions,
+[data-qb-2-tld="wikipedia.org"] #p-cactions,
+[data-qb-2-tld="glottopedia.org"] #p-cactions {
+  display: unset;
+}
+[data-qb-2-tld="wiktionary.org"] #siteSub,
+[data-qb-2-tld="wiktionary.org"] .toctogglespan,
+[data-qb-2-tld="wikipedia.org"] #siteSub,
+[data-qb-2-tld="wikipedia.org"] .toctogglespan,
+[data-qb-2-tld="glottopedia.org"] #siteSub,
+[data-qb-2-tld="glottopedia.org"] .toctogglespan {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .mw-parser-output a.extiw,
+[data-qb-2-tld="wiktionary.org"] .mw-parser-output a.external,
+[data-qb-2-tld="wiktionary.org"] :link,
+[data-qb-2-tld="wikipedia.org"] .mw-parser-output a.extiw,
+[data-qb-2-tld="wikipedia.org"] .mw-parser-output a.external,
+[data-qb-2-tld="wikipedia.org"] :link,
+[data-qb-2-tld="glottopedia.org"] .mw-parser-output a.extiw,
+[data-qb-2-tld="glottopedia.org"] .mw-parser-output a.external,
+[data-qb-2-tld="glottopedia.org"] :link {
+  color: #25a;
+}
+[data-qb-2-tld="wiktionary.org"] a:hover,
+[data-qb-2-tld="wikipedia.org"] a:hover,
+[data-qb-2-tld="glottopedia.org"] a:hover {
+  color: #48e !important;
+  text-decoration: underline #48ea;
+}
+[data-qb-2-tld="wiktionary.org"] a.new,
+[data-qb-2-tld="wikipedia.org"] a.new,
+[data-qb-2-tld="glottopedia.org"] a.new {
+  color: #000;
+  text-decoration: underline wavy #0003;
+}
+[data-qb-2-tld="wiktionary.org"] .currently-in-view,
+[data-qb-2-tld="wikipedia.org"] .currently-in-view,
+[data-qb-2-tld="glottopedia.org"] .currently-in-view {
+  border-left: 0.2em solid #0003;
+  padding-left: 0.5em;
+}
+@media only screen and (max-width: 600px) {
+  [data-qb-2-tld="wiktionary.org"] html,
+[data-qb-2-tld="wikipedia.org"] html,
+[data-qb-2-tld="glottopedia.org"] html {
+    font-size: 0.7em;
+  }
+  [data-qb-2-tld="wiktionary.org"] #content,
+[data-qb-2-tld="wikipedia.org"] #content,
+[data-qb-2-tld="glottopedia.org"] #content {
+    margin-left: 0;
+    padding: 3em 1.5em 1em;
+  }
+  [data-qb-2-tld="wiktionary.org"] #toc,
+[data-qb-2-tld="wiktionary.org"] #mw-navigation,
+[data-qb-2-tld="wiktionary.org"] #catlinks,
+[data-qb-2-tld="wikipedia.org"] #toc,
+[data-qb-2-tld="wikipedia.org"] #mw-navigation,
+[data-qb-2-tld="wikipedia.org"] #catlinks,
+[data-qb-2-tld="glottopedia.org"] #toc,
+[data-qb-2-tld="glottopedia.org"] #mw-navigation,
+[data-qb-2-tld="glottopedia.org"] #catlinks {
+    display: none;
+  }
+  [data-qb-2-tld="wiktionary.org"] .word-info,
+[data-qb-2-tld="wikipedia.org"] .word-info,
+[data-qb-2-tld="glottopedia.org"] .word-info {
+    flex-basis: 50%;
+  }
+}
+
+[data-qb-2-tld="wiktionary.org"] .language-container#Japanese:only-of-type .h-n {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .NavToggle,
+[data-qb-2-tld="wiktionary.org"] .checktrans,
+[data-qb-2-tld="wiktionary.org"] [title="Edit table heading"] {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .checksense > dl {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .checksense::before {
+  content: "Unmapped to senses";
+  font-style: italic;
+}
+[data-qb-2-tld="wiktionary.org"] div.NavFrame div.NavHead {
+  background: none;
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+  font-weight: 400;
+}
+[data-qb-2-tld="wiktionary.org"] .NavHead::after {
+  content: " ▼";
+  color: #0003;
+}
+[data-qb-2-tld="wiktionary.org"] div.NavFrame {
+  border: none;
+}
+[data-qb-2-tld="wiktionary.org"] .mediaContainer,
+[data-qb-2-tld="wiktionary.org"] .k-player {
+  width: 6em !important;
+  border: 0.05em solid #0003;
+  border-radius: 0.5em;
+  background: white;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+[data-qb-2-tld="wiktionary.org"] .k-player .control-bar {
+  border: none;
+  background: white;
+}
+[data-qb-2-tld="wiktionary.org"] .k-player .volume-slider,
+[data-qb-2-tld="wiktionary.org"] .k-player .volume_control,
+[data-qb-2-tld="wiktionary.org"] .k-player .k-options {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .derivedterms {
+  background: transparent !important;
+}
+[data-qb-2-tld="wiktionary.org"] .word-parallel > .h-n {
+  font-size: 1em;
+}
+[data-qb-2-tld="wiktionary.org"] [href="/wiki/Wiktionary:International_Phonetic_Alphabet"] ~ sup {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Pronunciation] ul li {
+  display: inline;
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Pronunciation] ul li:after {
+  content: "";
+  padding: 0 1em;
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Pronunciation] ul {
+  margin: 0;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > p {
+  margin-top: 3rem;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > ol {
+  border-left: 0.25em solid #0001;
+  margin: 0.5em 0 1.5em;
+  max-width: 93%;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > ol > li {
+  margin-left: 3em;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > .h-n {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container::before {
+  position: absolute;
+  right: 0.25em;
+  margin-top: 0.25em;
+  font-family: "Source Serif Pro", Garamond, Georgia, sans-serif;
+  font-size: 4em;
+  line-height: 1;
+  color: #0003;
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Noun]::before {
+  content: "N";
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Adjective]::before {
+  content: "A";
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Verb]::before {
+  content: "V";
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Suffix]::before {
+  content: "S";
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Counter]::before {
+  content: "C";
+}
+[data-qb-2-tld="wiktionary.org"] [id*=Particle]::before {
+  content: "P";
+}
+[data-qb-2-tld="wiktionary.org"] .word-info {
+  box-sizing: border-box;
+  max-height: 30em;
+  height: max-content;
+  overflow: scroll;
+}
+[data-qb-2-tld="wiktionary.org"] .word-info > .h-n {
+  font-weight: normal;
+}
+[data-qb-2-tld="wiktionary.org"] h1 {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > p:first-of-type > .headword {
+  font-family: "Source Serif Pro", Garamond, Georgia, sans-serif;
+  font-size: 1.5rem;
+  color: #000a;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > p:first-of-type {
+  font-size: 0em;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > p:first-of-type:hover {
+  font-size: 1em;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > p:first-of-type::after {
+  content: "Show inflections";
+  margin-left: 1em;
+  font-size: 1rem;
+  color: #000a;
+}
+[data-qb-2-tld="wiktionary.org"] .word-container > p:first-of-type:hover::after {
+  font-size: 0em;
+}
+[data-qb-2-tld="wiktionary.org"] .sister-wikipedia {
+  background: transparent !important;
+  border: none !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+[data-qb-2-tld="wiktionary.org"] .sister-wikipedia > :first-child {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] .sister-wikipedia > div {
+  font-size: 0;
+}
+[data-qb-2-tld="wiktionary.org"] .sister-wikipedia > div div a::before {
+  content: "W";
+  font-family: "Source Serif Pro", Garamond, Georgia, sans-serif;
+  font-size: 2.5rem;
+  background-color: white;
+  color: #000a;
+  line-height: 1;
+  padding: 0.5em;
+  border: 0.1rem solid #0003;
+  display: block;
+  border-radius: 0.5em;
+}
+[data-qb-2-tld="wiktionary.org"] #catlinks a:not([href*=Japanese]) {
+  color: #000a;
+}
+[data-qb-2-tld="wiktionary.org"] [style*="#f0f0f0"] p {
+  font-size: 0;
+  height: 1.3rem;
+  padding-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+[data-qb-2-tld="wiktionary.org"] [style*="#f0f0f0"] p::before {
+  content: "Imported from somewhere, maybe incorrect.";
+  font-size: 1rem;
+}
+[data-qb-2-tld="wiktionary.org"] .was-wotd {
+  display: none;
+}
+[data-qb-2-tld="wiktionary.org"] iframe {
+  width: 100%;
+  height: 40em;
+  border: none;
+}

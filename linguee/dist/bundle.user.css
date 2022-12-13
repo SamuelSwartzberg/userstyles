@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        linguee
+@namespace   https://samswartzberg.com
+@version     0.0.1
+@description No description yet.
+@author      https://samswartzberg.com
+@updateURL   https://raw.githubusercontent.com/SamuelSwartzberg/userstyles/master/linguee/dist/linguee.user.js
+==/UserStyle== */
+.l_deepl_ad__content_container {
+  display: none;
+}
+
+#mainlayout {
+  padding: 0 1em !important;
+}
+
+#outer_div {
+  min-width: unset !important;
+  max-width: 60em !important;
+}
