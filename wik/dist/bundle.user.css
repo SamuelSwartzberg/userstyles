@@ -1,11 +1,11 @@
-/* ==UserStyle==
+/*==UserStyle==
 @name        wik
 @namespace   https://samswartzberg.com
-@version     "0.0.1"
-@description No description yet.
+@version     0.0.1
+@description {}
 @author      https://samswartzberg.com
 @updateURL   https://raw.githack.com/SamuelSwartzberg/userstyles/master/wik/dist/bundle.user.css
-==/UserStyle== */
+==/UserStyle==*/
 @charset "UTF-8";
 [data-qb-2-tld="wiktionary.org"],
 [data-qb-2-tld="wikipedia.org"],
@@ -346,6 +346,7 @@
 [data-qb-2-tld="glottopedia.org"] .currently-in-view {
   border-left: 0.2em solid #0003;
   padding-left: 0.5em;
+  margin-left: -0.64em;
 }
 @media only screen and (max-width: 600px) {
   [data-qb-2-tld="wiktionary.org"] html,

@@ -1,0 +1,39 @@
+/*==UserStyle==
+@name        danbooru
+@namespace   https://samswartzberg.com
+@version     0.0.1
+@description {}
+@author      https://samswartzberg.com
+@updateURL   https://raw.githack.com/SamuelSwartzberg/userstyles/master/danbooru/dist/bundle.user.css
+==/UserStyle==*/
+@-moz-document domain("danbooru.donmai.us") {
+  header#top {
+    order: 1;
+  }
+
+  div#page {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  div#page .sidebar-container {
+    margin: 0 1em;
+  }
+  div#page .sidebar-container #sidebar {
+    margin-top: 1em;
+  }
+  div#page .sidebar-container #content {
+    display: flex;
+    flex-direction: column;
+  }
+  div#page .sidebar-container #content .image-container {
+    margin: 0;
+    order: -1;
+  }
+  div#page .sidebar-container #content .image-container #image {
+    width: 100%;
+    height: 100vh !important;
+    object-fit: contain;
+  }
+}

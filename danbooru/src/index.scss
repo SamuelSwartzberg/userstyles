@@ -1,0 +1,32 @@
+@-moz-document domain("danbooru.donmai.us") {
+  header#top {
+    order: 1;
+  }
+  div#page {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    .sidebar-container {
+      margin: 0 1em;
+      #sidebar {
+        margin-top: 1em;
+      }
+
+      #content {
+        display: flex;
+        flex-direction: column;
+
+        .image-container {
+          margin: 0;
+          order: -1;
+          #image {
+            width: 100%;
+            height: 100vh !important; // needs important to override !important of the site itself, which I obviously don't have control over
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}

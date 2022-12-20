@@ -220,6 +220,7 @@
   .currently-in-view {
     border-left: 0.2em solid #0003;
     padding-left: 0.5em;
+    margin-left: -0.64em;
   }
   @media only screen and (max-width: 600px) {
     html {
